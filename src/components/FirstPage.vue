@@ -21,7 +21,7 @@ export default {
   },
   methods: {
     ...mapActions({
-      modifyBookmark: "modify"
+      modifyBookmark: "bookmarkModule/modify"
     }),
     onAddItem() {
       this.modifyBookmark(1);
@@ -29,7 +29,7 @@ export default {
   },
   computed: {
     ...mapGetters({
-      list: "bookmarks"
+      list: "bookmarkModule/bookmarks"
     })
   }
 };
